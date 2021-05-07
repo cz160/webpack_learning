@@ -15,24 +15,6 @@ module.exports = {
     }),
   ],
   module: {
-    rules: [
-      {
-        test: /\.css$/,
-        use: ["style-loader", "css-loader"],
-      },
-      {
-        test: /\.png|jpg|gif$/,
-        use: ["file-loader"],
-      },
-      {
-        test: /\.txt$/,
-        use: {
-          loader: path.resolve(__dirname, "../loader/index.js"),
-          options: {
-            name: "cz",
-          },
-        },
-      },
-    ],
+    rules: [],
   },
 };
